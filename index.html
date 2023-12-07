@@ -11,7 +11,7 @@
     <main>
       <button class="btn btn--restart">Restart</button>
       <img src="images/dice-1.png" alt="dice" class="dice" />
-      <section class="player__one">
+      <section class="player__one active__player">
         <h1>PLAYER 1</h1>
         <h2 class="score" id="score__1">0</h2>
         <div class="current__score__container">
@@ -19,7 +19,7 @@
           <h3 class="current__score" id="current__1">0</h3>
         </div>
       </section>
-      <section class="player__two active__player">
+      <section class="player__two">
         <h1>PLAYER 2</h1>
         <h2 class="score" id="score__2">0</h2>
         <div class="current__score__container">
@@ -28,8 +28,19 @@
         </div>
       </section>
       <button class="btn btn--roll">🎲 Roll dice</button>
-      <button class="btn btn--hide">Hold</button>
+      <button class="btn btn--hold">Hold</button>
     </main>
+    <div class="modal hidden">
+      <h1 class="modal__title">Player X victory</h1>
+      <p class="modal__content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias saepe
+        mollitia suscipit dolorum maxime repellat, explicabo quisquam nulla
+        officiis deleniti sint commodi expedita asperiores porro itaque aliquam
+        cumque ipsa exercitationem?
+      </p>
+      <button class="btn btn--restart--modal">Restart</button>
+    </div>
+    <div class="overlay hidden"></div>
     <script src="js/script.js"></script>
   </body>
 </html>
